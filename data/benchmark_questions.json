@@ -1,0 +1,202 @@
+[
+  {
+    "question": "According to the commit history, what bug fixes were introduced in commit `e24d44c` (PR #15995)?",
+    "ground_truth": "Commit `e24d44c` (PR #15995) resolved two issues: it fixed the topic repository list not being displayed, and it corrected an issue where the `skip_users` option was not being applied."
+  },
+  {
+    "question": "Which PR resolved the issue where the `skip_users` setting was ignored and the topic repository list failed to display?",
+    "ground_truth": "The issues were resolved in PR #15995, which was committed in commit `e24d44c`."
+  },
+  {
+    "question": "What is the primary purpose of the changes introduced in commits `9b8410b`, `93b78f8`, and `b959b44`?",
+    "ground_truth": "The primary purpose of commits `9b8410b`, `93b78f8`, and `b959b44` was to update the project's release notes."
+  },
+  {
+    "question": "In the context of PR #15995 (commit `e24d44c`), what specific user-filtering or user-skipping feature was fixed because it wasn't being applied?",
+    "ground_truth": "The `skip_users` feature/configuration was fixed because it was not being properly applied prior to this commit."
+  },
+  {
+    "question": "Which commit specifically addresses the bug where the topic repository list was missing or not displayed to users?",
+    "ground_truth": "Commit `e24d44c` (associated with PR #15995) specifically addresses and fixes the bug where the topic repository list was not being displayed."
+  },
+  {
+    "question": "What was the objective of Pull Request #16005 as implemented in commit 8f93206?",
+    "ground_truth": "The objective of Pull Request #16005, implemented in commit 8f93206, was to update outdated translations specifically for the Turkish language (tr)."
+  },
+  {
+    "question": "Why were commits b959b44, 20d332c, and 061eb10 introduced to the repository?",
+    "ground_truth": "These commits (b959b44, 20d332c, and 061eb10) were introduced to update the repository's release notes, keeping documentation aligned with recent changes or releases."
+  },
+  {
+    "question": "What specific translation locale and action were targeted by commit 8f93206?",
+    "ground_truth": "Commit 8f93206 targeted the Turkish locale (tr) to update outdated translations (using the 'update-outdated' process)."
+  },
+  {
+    "question": "Which Pull Request is linked to the Turkish translation updates in commit 8f93206?",
+    "ground_truth": "The Turkish translation updates in commit 8f93206 are linked to Pull Request #16005."
+  },
+  {
+    "question": "In the provided commit history, which commits were dedicated solely to updating the release notes?",
+    "ground_truth": "The commits dedicated to updating the release notes are b959b44, 20d332c, and 061eb10."
+  },
+  {
+    "question": "What was the purpose of Commit 8f93206, and which Pull Request was it associated with?",
+    "ground_truth": "Commit 8f93206 was used to update the translations for Turkish (tr) under the 'update-outdated' task, and it is associated with Pull Request #16005."
+  },
+  {
+    "question": "Which commit and Pull Request updated the Traditional Chinese (zh-hant) translations in this set of changes?",
+    "ground_truth": "The Traditional Chinese (zh-hant) translations were updated in Commit 5ca69d4, which is associated with Pull Request #15996."
+  },
+  {
+    "question": "What is the purpose of Commit 38c6686 as described in its commit message?",
+    "ground_truth": "The purpose of Commit 38c6686 was to update the release notes."
+  },
+  {
+    "question": "Which Pull Request and commit SHA are responsible for updating the French (fr) translations for 'update-outdated'?",
+    "ground_truth": "The French (fr) translations were updated in Commit 1bea405 via Pull Request #16006."
+  },
+  {
+    "question": "Based on the commits 8f93206, 5ca69d4, and 1bea405, what specific translation update task or label is common to all three translation commits?",
+    "ground_truth": "All three translation commits (8f93206, 5ca69d4, and 1bea405) share the common task/label '(update-outdated)' in their commit messages, indicating they were part of updating outdated translations."
+  },
+  {
+    "question": "What specific translation update was introduced in commit 1bea405, and which pull request was it associated with?",
+    "ground_truth": "Commit 1bea405 updated the outdated translations for French (fr), which was merged via Pull Request #16006."
+  },
+  {
+    "question": "Which commit and associated Pull Request updated the outdated German (de) translations?",
+    "ground_truth": "The outdated German (de) translations were updated in commit 362c6f1, which is associated with Pull Request #15999."
+  },
+  {
+    "question": "What is the common purpose of the changes introduced in commits 3330e24 and 569630f?",
+    "ground_truth": "Both commits 3330e24 and 569630f were dedicated to updating the release notes."
+  },
+  {
+    "question": "Under which Pull Request number were the outdated French (fr) translations updated, and what is the corresponding commit SHA?",
+    "ground_truth": "The outdated French (fr) translations were updated under Pull Request #16006, corresponding to commit SHA 1bea405."
+  },
+  {
+    "question": "What task did Pull Request #15999 accomplish according to the commit history?",
+    "ground_truth": "Pull Request #15999 updated outdated translations for German (de), as recorded in commit 362c6f1."
+  },
+  {
+    "question": "What regression was introduced in FastAPI version 0.137.0 regarding nested routers, and what error does it raise?",
+    "ground_truth": "In FastAPI 0.137.0, nesting an empty-path route (e.g., `path=\"\"`) under an outer router included without a prefix raises a `fastapi.exceptions.FastAPIError: Prefix and path cannot be both empty` error at application construction time. This setup worked in version 0.136.3 and earlier, registering the route successfully."
+  },
+  {
+    "question": "Which specific pull request (PR) introduced the route-tree refactor that caused the regression reported in Issue #15762?",
+    "ground_truth": "The regression was introduced by the route-tree refactor in PR #15745, which preserved `APIRouter`/`APIRoute` instances instead of flattening them on include."
+  },
+  {
+    "question": "According to Issue #15762, under what specific nesting conditions does the \"Prefix and path cannot be both empty\" error occur in FastAPI 0.137.0?",
+    "ground_truth": "The error occurs when an empty-path route (`path=\"\"`) is nested, and at least one include hop in its ancestry has no prefix (for example, an inner router has a prefix but the outer router is included in the main app without a prefix). If every hop in the ancestry carries a prefix, the error does not occur."
+  },
+  {
+    "question": "What is the identified root cause of the validation failure in `fastapi/routing.py` as described in Issue #15762?",
+    "ground_truth": "In `include_router`, when the `prefix` is empty, FastAPI recursively iterates the included route candidates and raises an error if any route's raw `path` is empty. It fails to compose the intermediate prefixes contributed by intermediate included routers, meaning a leaf route that actually has an effective prefix from an inner hop still trips the check."
+  },
+  {
+    "question": "In the example code provided in Issue #15762, what is the structure of the routers, and what was the expected registered path for the `list_items` route?",
+    "ground_truth": "The example code defines a `leaf` router with an empty path `\"\"` for `list_items`. This `leaf` router is included in an `inner` router with the prefix `\"/items\"`. Finally, the `inner` router is included in the main `app` without a prefix. The expected registered path for the `list_items` route was `/items`, which worked in 0.136.3 but raised an error in 0.137.0."
+  },
+  {
+    "question": "What regression was introduced in FastAPI 0.137.0 regarding empty-path routes nested under prefix-less outer routers, and what PR caused it?",
+    "ground_truth": "The regression was introduced by the route-tree refactor in PR #15745, which preserved APIRouter/APIRoute instances instead of flattening them on include. When a route with an empty path (path=\"\") is nested under an inner router with a prefix, and then included in an outer router or app without a prefix, it raises 'fastapi.exceptions.FastAPIError: Prefix and path cannot be both empty'. This occurs because include_router recursively checks the raw path of the route candidates without composing the intermediate prefixes."
+  },
+  {
+    "question": "Why do Pydantic models created from Form input data in FastAPI lose metadata about which fields were explicitly set compared to JSON body models?",
+    "ground_truth": "For models created from a Form, FastAPI preloads default values during the parsing phase and passes them to the validator to construct the model. Because these default values are explicitly passed during model creation, Pydantic includes them in model_fields_set, making it impossible to distinguish between explicitly set fields and default values, and potentially enforcing validation on default values."
+  },
+  {
+    "question": "Why does adding a route with multiple HTTP methods (e.g., [\"POST\", \"DELETE\"]) using router.add_api_route result in duplicate operation_id warnings in FastAPI?",
+    "ground_truth": "This issue is caused by PR #4650. The generate_unique_id() function uses list(route.methods)[0].lower() to generate the suffix for the operation_id. Since it only takes the first method in the list, both endpoints generated for the route (e.g., POST and DELETE) receive the exact same suffix (e.g., _post), leading to duplicate operation IDs and a 'UserWarning: Duplicate Operation ID'."
+  },
+  {
+    "question": "Why does the error traceback stack fail to show the exact line of an error in an endpoint when using a synchronous yield dependency in Python 3.11+?",
+    "ground_truth": "When using a synchronous dependency with yield, FastAPI runs it in a threadpool using contextmanager_in_threadpool (found in fastapi/concurrency.py). If an error is raised inside the endpoint, the exception is propagated back through the context manager's __aexit__ via await self.gen.athrow(typ, value, traceback) and re-raised inside contextmanager_in_threadpool. This process breaks the traceback stack, hiding the exact line of the error in the endpoint, whereas async yield dependencies propagate the exception correctly."
+  },
+  {
+    "question": "In FastAPI 0.137.0, why does the prefix-less outer include check fail for nested routers even if an intermediate router has a prefix?",
+    "ground_truth": "In fastapi/routing.py's include_router function, when the outer prefix is empty, FastAPI recursively iterates over the included route candidates. It validates whether both the prefix and path are empty. However, it checks the route's raw path directly instead of composing the effective path by combining the prefixes contributed by intermediate included routers. Thus, the leaf route's empty path trips the validation check."
+  },
+  {
+    "question": "What traceback issue occurs in FastAPI when using a synchronous dependency with `yield` under Python 3.11, and how does it differ from using an asynchronous dependency?",
+    "ground_truth": "When using a synchronous dependency that yields (e.g., wrapped in `contextmanager_in_threadpool`), the error traceback is broken and fails to show the exact location where the error was raised in the router function (e.g., the line raising `ValueError`). In contrast, using an asynchronous dependency with `yield` correctly preserves and displays the full traceback, including the exact line in the router function and the dependency's yield statement."
+  },
+  {
+    "question": "According to Issue #12246, what discrepancy exists between the FastAPI documentation and the actual generated `openapi.json` regarding the default `servers` list?",
+    "ground_truth": "The FastAPI documentation states that if the `servers` list is not provided (or is empty) and `root_path_in_servers` is set to `True` (the default), the default value should be a dict with a `url` value of `/`. However, in practice, querying `/openapi.json` returns a schema where the `servers` key is completely missing (e.g., `{\"openapi\":\"3.1.0\",\"info\":{\"title\":\"FastAPI\",\"version\":\"0.1.0\"},\"paths\":{}}`)."
+  },
+  {
+    "question": "What are the main objectives and proposed implementation steps for the GraphQL integration feature requested in Issue #15712?",
+    "ground_truth": "The main objectives are to eliminate code duplication between REST and GraphQL definitions by automatically generating GraphQL schemas from Pydantic models, allowing teams to support both REST and GraphQL simultaneously. The proposed implementation steps include: 1) Designing the GraphQL integration API, 2) Building a schema generator from Pydantic, 3) Implementing a query resolver system, 4) Adding authentication/authorization, and 5) Creating examples and documentation."
+  },
+  {
+    "question": "How was the Hindi (`hi`) translation update in PR #15901 generated, and what is the recommended way for contributors to make further translation improvements?",
+    "ground_truth": "The translation update in PR #15901 was created automatically using LLMs based on the prompt file located at `docs/hi/llm-prompt.md`. Instead of suggesting direct manual changes in the PR, the recommended approach for contributors is to make PRs updating that prompt file so that the LLM can generate higher-quality translations."
+  },
+  {
+    "question": "In Python 3.11, which specific internal modules/files and lines are shown in the broken traceback of a synchronous yield dependency error before it raises the final exception (e.g., `ValueError`), as reported in Issue #13022?",
+    "ground_truth": "The traceback shows execution passing through `contextlib.py` (line 222, in `__aexit__` calling `await self.gen.athrow(typ, value, traceback)`) and then `fastapi/concurrency.py` (line 36, in `contextmanager_in_threadpool` raising `e`), before directly raising the final exception (e.g., `ValueError`) without showing the route function's file or line number."
+  },
+  {
+    "question": "In PR #15951, why was the parameter name `problem_details=True` chosen instead of the proposed `rfc9457=True`?",
+    "ground_truth": "The parameter name `problem_details=True` was chosen because it matches the RFC's own terminology and is not tied directly to a specific specification number, unlike `rfc9457=True`."
+  },
+  {
+    "question": "Why did the implementation in PR #15951 extend the existing `HTTPException` with a `type` parameter rather than introducing a separate `ProblemDetailsException`?",
+    "ground_truth": "Extending the existing `HTTPException` with a `type` parameter was chosen to minimize the API surface area, meaning there is no new exception class for developers to learn."
+  },
+  {
+    "question": "In PR #15951, why is the RFC 9457 Problem Details configuration limited to an app-level opt-in rather than supporting per-router or per-route opt-in?",
+    "ground_truth": "It is configured at the application level because exception handlers in FastAPI are global. Supporting per-route or per-router opt-in would require threading configuration through FastAPI's internals, which was deferred as a potential follow-up."
+  },
+  {
+    "question": "What issue does PR #15958 address regarding `ResponseValidationError` in streaming endpoints, and how does it resolve it?",
+    "ground_truth": "When a streaming endpoint (SSE or JSONL) yields an item that fails validation, FastAPI raises a `ResponseValidationError` that is silently swallowed, resulting in an empty 200 OK with no error logs. PR #15958 resolves this by catching `ResponseValidationError` in `_producer` (SSE), `_async_stream_jsonl`, and `_sync_stream_jsonl`, calling `logger.exception()` to emit an ERROR-level log with the full traceback, and then re-raising the exception so it propagates."
+  },
+  {
+    "question": "According to PR #15901, what is the recommended way to suggest translation improvements for Hindi rather than proposing direct changes to the translation PR itself?",
+    "ground_truth": "The recommended approach is to submit PRs that update the LLM prompt file at `docs/hi/llm-prompt.md` so that the LLM can generate better automatic translations."
+  },
+  {
+    "question": "Why did the author of PR #15951 choose the parameter name `problem_details=True` over the proposed `rfc9457=True`?",
+    "ground_truth": "According to the design decisions in PR #15951, `problem_details=True` was preferred over `rfc9457=True` because it matches the RFC's own terminology and is not tied to a specific specification number."
+  },
+  {
+    "question": "In PR #15951, why was the opt-in for RFC 9457 Problem Details implemented only at the application level rather than per-router or per-route?",
+    "ground_truth": "Per-router or per-route opt-in was deferred because exception handlers in FastAPI are global. Supporting per-route configuration would require threading the configuration through internal routing components, which was deemed best left as a follow-up task."
+  },
+  {
+    "question": "How does PR #15210 maintain backward compatibility for public imports and existing tests after refactoring `fastapi/routing.py`?",
+    "ground_truth": "PR #15210 retains `fastapi/routing.py` as a lightweight compatibility facade that re-exports all routing symbols (such as `APIRouter`, `APIRoute`, and `APIWebSocketRoute`) using an explicit `__all__` list. It also preserves compatibility for monkeypatch-driven SSE tests via facade export paths and introduces contract tests (`tests/test_routing_facade_contract.py`) to verify the identity of re-exported symbols."
+  },
+  {
+    "question": "What major problem arises when trying to use standard Starlette mounts to support an empty path under a router prefix (e.g., `APIRouter(prefix=\"/items\")` with a route `@router.get(\"\")`), and how does PR #4794 attempt to solve it?",
+    "ground_truth": "Standard Starlette mounts do not support routing to a root path without a trailing slash under a prefix (e.g., handling `/items` instead of `/items/`). PR #4794 attempts to solve this by introducing a custom `APIMount` class that extends Starlette's mount with custom logic to handle root paths under a prefix without a trailing slash."
+  },
+  {
+    "question": "In the Class-Based Routers (CBR) pattern proposed in PR #15447, how are heavy, stateful resources distinguished from request-scoped resources in terms of lifecycle management?",
+    "ground_truth": "Under the CBR pattern in PR #15447, heavy, stateful resources (such as database pools or ML models) are initialized once inside the class's `__init__` method, ensuring they are only set up once. In contrast, lightweight, request-scoped resources are managed dynamically using FastAPI's native `Depends` system."
+  },
+  {
+    "question": "What architectural challenge in growing FastAPI applications does the introduction of Class-Based Routers (CBR) and Class-Based Views (CBV) in PR #15447 aim to solve regarding resource lifecycle management?",
+    "ground_truth": "It addresses the challenge of strict resource lifecycle management by enforcing a pattern where heavy, stateful resources (such as DB pools or ML models) are initialized once in the class `__init__` constructor, while lightweight, request-scoped resources are managed via `Depends`. This prevents the common anti-pattern of initializing costly objects inside individual endpoints, which is especially critical for ML/LLM inference applications and enterprise-scale APIs."
+  },
+  {
+    "question": "In the refactored HuggingFace Transformers CLI server example provided in PR #15447, how is the model manager's lifecycle cleaned up when the FastAPI application shuts down?",
+    "ground_truth": "The cleanup is managed using an `@asynccontextmanager` method called `lifespan(self, app: FastAPI)` within the `OpenAI` class. This method yields control to the application and then executes `self.model_manager.shutdown()` upon application shutdown to ensure proper resource cleanup."
+  },
+  {
+    "question": "Why was the change in PR #5693 introduced regarding the OpenAPI schema generation in FastAPI, and what issue did it address?",
+    "ground_truth": "PR #5693 was introduced to address issue #5559. Previously, the OpenAPI schema returned by `get_openapi` excluded none fields by default with no parameters available to customize this behavior. The PR allows users to specify the exclusion or inclusion of none or unset fields when initializing `FastAPI()`."
+  },
+  {
+    "question": "What developer convenience does PR #6041 introduce regarding `response_model` formatting, and what previous PR does it follow up on?",
+    "ground_truth": "PR #6041 follows up on the unmerged PR #2187. It allows developers to set default values for `response_model_by_alias`, `response_model_exclude_unset`, `response_model_exclude_defaults`, and `response_model_exclude_none` at the application or router level. This saves developers from having to declare these formatting options on each individual endpoint when a consistent non-default behavior is desired across the entire application."
+  },
+  {
+    "question": "Why was the slim package stub removed in PR #15649?",
+    "ground_truth": "The slim package stub was removed because it had been deprecated for a while. Although it was initially kept \"just in case,\" it was determined to be no longer needed."
+  }
+]

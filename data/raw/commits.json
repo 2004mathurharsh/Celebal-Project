@@ -1,0 +1,2402 @@
+[
+  {
+    "sha": "9b8410bdc9fa1fd679ea7e65b926535c7045ab87",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 14:37:13 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e24d44cce4092a33b64e9536e96e7608a7dcb9b8",
+    "author": "Yurii Motov",
+    "date": "Wed Jul 15 16:36:37 2026 +0200",
+    "subject": "ðŸ“� Fix topic repository list not being displayed and `skip_users` not being applied (#15995)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "93b78f8646dea4543cc4d938f7e29b8547749a99",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:21:27 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b959b443577c5f2b870cdef13219b98aa32f8943",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:19:54 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "20d332cb2e33ed5e6a406cffafa79f537852a307",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:15:28 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "061eb10016f5cd680a7796ba0320100ddce00710",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:14:40 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "8f93206768d362c75ba38e7c66a3e104df56222e",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:14:11 2026 +0200",
+    "subject": "ðŸŒ� Update translations for tr (update-outdated) (#16005)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "5ca69d462685929d2c418a0a393d9c13d3d24504",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:13:02 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh-hant (update-outdated) (#15996)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "38c668601586dbdf38a6d8c4200c6ab6ab745e1b",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:12:46 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "1bea40556e933861fe5b66e91b04a84c766d6af6",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:12:13 2026 +0200",
+    "subject": "ðŸŒ� Update translations for fr (update-outdated) (#16006)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "3330e247ce1984f2e9bedeb20c6dbdedf3662cfa",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:11:45 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "569630f6463ff03bd711ad8dd07af6f074410124",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:11:16 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "362c6f1d3f11b1426cf18315568947e9e64894f3",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:11:05 2026 +0200",
+    "subject": "ðŸŒ� Update translations for de (update-outdated) (#15999)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "10f30b844b370aa56974c59ec8bb13439de75b96",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:10:56 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ko (update-outdated) (#16004)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "4cb38a48098f0bce73cd6c7242cb6a4f81a5b4c2",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:10:45 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh (update-outdated) (#16001)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "745d3d222f52ea61c4e9d1cc19c7196992594085",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:10:36 2026 +0200",
+    "subject": "ðŸŒ� Update translations for uk (update-outdated) (#16003)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "8458d35c96647a92801b9a243f3bd42a24fc7350",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:10:29 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "75bdc46293f35d8ca806e4690d6e294d9444492b",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:10:14 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c29b4a17afe51299200fad8e5bc9f5c8822efe4d",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:10:06 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "3a8ab1f76bc6af6d84101cf21d8180c20f3e6538",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:09:44 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ja (update-outdated) (#15998)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b10d3dac4ce2e17ecd04f65fd92b050ce33ca899",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 15 08:09:35 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "1d02512ce3c5d2ab0cb59ccda44725e7fc3076c7",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:09:33 2026 +0200",
+    "subject": "ðŸŒ� Update translations for pt (update-outdated) (#16000)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "24a957b5b01a25718b477897976bff7f032606f3",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:09:15 2026 +0200",
+    "subject": "ðŸŒ� Update translations for es (update-outdated) (#15997)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2ebfb7a7bc68b5346502676e7a234cd78cf01c26",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 15 10:08:55 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ru (update-outdated) (#16002)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "027f27220c3ba66be6c42c95a227389b19383645",
+    "author": "github-actions[bot]",
+    "date": "Tue Jul 14 15:40:57 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "37ccca3e95e287822602e275e92301399ba8917b",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Tue Jul 14 17:40:20 2026 +0200",
+    "subject": "ðŸŒ� Update translations for hi (add-missing) (#15990)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "64fc8a4521d924e15cfecf6bf37d775ce688267a",
+    "author": "github-actions[bot]",
+    "date": "Tue Jul 14 12:18:15 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e5d61c34a35f65676115ceec75acb26e1502f2c3",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Tue Jul 14 14:17:35 2026 +0200",
+    "subject": "ðŸŒ� Update translations for hi (add-missing) (#15925)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "b1346bb142c8154950953255eea535e5a83d62eb",
+    "author": "github-actions[bot]",
+    "date": "Mon Jul 13 11:02:55 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "9405816f15ffa5e6c3558444a14791f3b62e0c99",
+    "author": "dependabot[bot]",
+    "date": "Mon Jul 13 13:02:21 2026 +0200",
+    "subject": "â¬† Bump the python-packages group across 1 directory with 6 updates (#15981)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "fd4c4cfc3e8d3ffc207ff9f510a27b459e79fa0f",
+    "author": "github-actions[bot]",
+    "date": "Mon Jul 13 10:27:10 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "87bbab1b739e7f7018bb826bc929af5c0e8e5d40",
+    "author": "dependabot[bot]",
+    "date": "Mon Jul 13 12:26:39 2026 +0200",
+    "subject": "â¬† Bump typing-extensions from 4.15.0 to 4.16.0 (#15982)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "b335c906e1495c1b35100823b8b33639879d15f2",
+    "author": "github-actions[bot]",
+    "date": "Mon Jul 13 10:16:09 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2b0b417c0cc38e3197d1c8eab90d512c6d905e25",
+    "author": "dependabot[bot]",
+    "date": "Mon Jul 13 12:15:37 2026 +0200",
+    "subject": "â¬† Bump the github-actions group across 1 directory with 4 updates (#15983)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "c9d88e33d8aecb96a4898a8f82d154ea1d40e318",
+    "author": "github-actions[bot]",
+    "date": "Mon Jul 13 09:54:21 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "ef3f1ac9c1483666fb70ced80b089f08f7c8d5bf",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jul 13 11:53:48 2026 +0200",
+    "subject": "â¬† Bump pre-commit hooks (#15985)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "cf93cc6258babf28a5c4b7a269517903b30ef609",
+    "author": "github-actions[bot]",
+    "date": "Mon Jul 13 09:04:02 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b75bd318f30e57a93727b17b4ef246fc2af61863",
+    "author": "Yurii Motov",
+    "date": "Mon Jul 13 11:03:30 2026 +0200",
+    "subject": "ðŸ‘· Use `FASTAPI_LATEST_CHANGES` token in `bump-pre-commit-hooks` workflow (#15984)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c87047938912ce46ac1855d45638333397c81714",
+    "author": "github-actions[bot]",
+    "date": "Mon Jul 13 08:09:09 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "8bd152772e7f0aa50b88006ec574cf23f92ba571",
+    "author": "Yurii Motov",
+    "date": "Mon Jul 13 10:08:13 2026 +0200",
+    "subject": "ðŸ‘· Add GH workflow to bump pre-commit hook versions (#15873)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "424f6b3c9ac8df1e35ed421bfeb4ef147cfecdeb",
+    "author": "github-actions[bot]",
+    "date": "Mon Jul 13 08:03:27 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "59e4a1c8a84dc6a19fdf054f74317504b68d7bc0",
+    "author": "Yurii Motov",
+    "date": "Mon Jul 13 10:02:51 2026 +0200",
+    "subject": "ðŸ”§ Set Dependabot schedule interval to \"monthly\" (#15874)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "7cb06f360dd44efac059848df1a9beee7643b018",
+    "author": "github-actions[bot]",
+    "date": "Tue Jul 7 19:03:19 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "1e60e3299246c6b1515ab9ef1b1c5de11bf4454b",
+    "author": "dependabot[bot]",
+    "date": "Tue Jul 7 21:02:48 2026 +0200",
+    "subject": "â¬† Bump CodSpeedHQ/action from 4.17.6 to 4.18.1 in the github-actions group (#15950)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "fb53e1df99d05689d2c519bd30ae50442c3240cb",
+    "author": "github-actions[bot]",
+    "date": "Tue Jul 7 19:01:05 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "74963395fc32638a2b698d9fc0b2a46961556b1b",
+    "author": "dependabot[bot]",
+    "date": "Tue Jul 7 21:00:31 2026 +0200",
+    "subject": "â¬† Bump the python-packages group with 8 updates (#15952)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "3f3354a94d7c8b496258d7b762070e46704e01c1",
+    "author": "github-actions[bot]",
+    "date": "Mon Jul 6 22:41:52 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "4cafad584d5eb4cff0ace66f25b6b9a461d6fa6f",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Tue Jul 7 00:41:18 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: add TutorCruncher (#15947)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "dd17e4f723a23854cfe4b9b6258e31efd86ea523",
+    "author": "github-actions[bot]",
+    "date": "Sat Jul 4 20:24:30 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "787e11b4266581c7623afa1bd950aecfe64e8eea",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jul 4 22:23:59 2026 +0200",
+    "subject": "ðŸ‘· Fix notify translations checkout target (#15933)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "68c02766d4a537890a892d42c94fc4c4c4d16906",
+    "author": "github-actions[bot]",
+    "date": "Sat Jul 4 20:04:00 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "f500ef131e0c00bd42b26706ce75ece89eb39081",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jul 4 22:03:22 2026 +0200",
+    "subject": "ðŸ‘· Fix latest-changes checkout target (#15932)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "fdfd5091f149bd9c7281c2bcc4bb867bdaa1269c",
+    "author": "github-actions[bot]",
+    "date": "Sat Jul 4 13:15:08 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "28c6fa1132b62489aef98234a09a8a663495d67b",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jul 4 15:14:37 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: remove RapidProxy (#15929)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "0475b62ff7dff909db08dc9bba96607ec08e2b5d",
+    "author": "github-actions[bot]",
+    "date": "Fri Jul 3 19:10:54 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "9c913b7bf748db2f1b2ed7a02c45264abc208698",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Fri Jul 3 21:08:33 2026 +0200",
+    "subject": "â¬†ï¸� Update issue-manager to 0.8.1 (#15928)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "f9816e4aa3e4e6ae55abd3fe4a190a6fa9da2c43",
+    "author": "github-actions[bot]",
+    "date": "Fri Jul 3 14:43:06 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "a52b4b9283ef42704ce1392f9ef2819205400855",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Fri Jul 3 16:41:40 2026 +0200",
+    "subject": "â¬†ï¸� Update latest-changes to 0.6.1 (#15926)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "33299e22d178aa6f731140f67f8dbf5dd07cfa25",
+    "author": "github-actions[bot]",
+    "date": "Fri Jul 3 13:42:01 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "72726acc6b16d419c02db9da5859b5b0f859fb6f",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Fri Jul 3 15:41:36 2026 +0200",
+    "subject": "ðŸŒ� Update translations for hi (add-missing) (#15797)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "d27fe5cf15106a93687951479272999d4d84ecce",
+    "author": "github-actions[bot]",
+    "date": "Fri Jul 3 13:39:15 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "91df2c20bc83ba67aaf71cf461acd36c314ba326",
+    "author": "Yurii Motov",
+    "date": "Fri Jul 3 15:38:49 2026 +0200",
+    "subject": "ðŸŒ� Update `llm-prompt.md` for Hindi (#15810)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "ae59432d3ba389ba6e83101ffc6b2c5b10b43421",
+    "author": "github-actions[bot]",
+    "date": "Fri Jul 3 12:39:09 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b0708dcbb99ee0b63521b84c8cdc843055095124",
+    "author": "Yurii Motov",
+    "date": "Fri Jul 3 14:38:40 2026 +0200",
+    "subject": "ðŸŒ� Fix language-specific translation prompt for Russian language (#15924)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "cecd96d9c6c318e0df1c40cedbc2e953381ddfd3",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 18:24:47 2026 +0200",
+    "subject": "ðŸ”– Release version 0.139.0 (#15910)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "aea660936b55fdbd84270d24f892839388922dd6",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 16:13:00 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "319be508ce7db9ee5f52c3b9baa68c6cc1037c10",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 18:12:33 2026 +0200",
+    "subject": "âœ¨ Support dependencies in `app.frontend()`, e.g. for automatic cookie authentication for the frontend (#15908)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "66a90f6ee9c0cf58ec61b14f8925344d6f16eae5",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 15:54:16 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d30a3ebfc7d7fd7851ba4243677266c53cb9f154",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 17:53:31 2026 +0200",
+    "subject": "ðŸ‘¥ Update FastAPI People - Experts (#15909)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "122f1b58f4e0fabfefef3710a8c8247bb2bd820b",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 14:23:45 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "fd6ece32eeb27c9ce164bd9170f9d8e1db1dacff",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 16:23:18 2026 +0200",
+    "subject": "ðŸ‘¥ Update FastAPI GitHub topic repositories (#15906)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "ec2a6adaf14c440bdcd0fd3f4ca203daa8c3ba6a",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 14:07:01 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "9d7d7febd3a66844f948254c1ba4745b6cc16f40",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 16:06:27 2026 +0200",
+    "subject": "ðŸŒ� Update translations for fr (update-outdated) (#15897)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "8dc852df4713efa998d126c5194302e9f06e7675",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 13:59:58 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "704927a066baaf3d680446bdee700b9b8e16c13e",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 13:59:57 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c80355b65eda4e636aff4463d159c1bdc2029982",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 15:59:24 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh-hant (update-outdated) (#15896)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "28c93900e71f69ac536ebdd317c476003750a8de",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 15:59:00 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ja (update-outdated) (#15895)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "a49e35172dcfc064f8b3a6e0758442da774a977d",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 13:58:04 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "512a3e7825dc7f9c4e08c350851d06ab005b18cc",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 15:57:35 2026 +0200",
+    "subject": "ðŸŒ� Update translations for de (update-outdated) (#15899)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "e23813a9b537672a882b589290ca128c0a55c95d",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 13:50:58 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c2cdfcbcdd0394c8b4dcf3bd30fca535091e5524",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 15:50:11 2026 +0200",
+    "subject": "ðŸŒ� Update translations for es (update-outdated) (#15892)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "60237faadb926f616b2b8947e1f793779844d22a",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 13:47:39 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e7324a77db4a9f4d38e4673850ed10ab1de0cb96",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 15:46:01 2026 +0200",
+    "subject": "ðŸŒ� Update translations for tr (update-outdated) (#15891)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "50ab217bc6f2fc2d2ecd05af8329591c55e9d5fe",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 13:45:51 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "48dd913e5648cda943bc28cccfbbc4c93f2a5859",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 15:45:25 2026 +0200",
+    "subject": "ðŸŒ� Update translations for pt (update-outdated) (#15893)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "59d335d200a9d39256b521038f7ae58535eb75b0",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 13:36:20 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "6119d875861a1ff1d4f4352fe6c87c42a8d820dc",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 15:35:53 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh (update-outdated) (#15898)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "2b5cf661cab461072b910f26bdc8d2e6512abe13",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 13:27:56 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "509ac59f5c8cd0914968beb64178c764e1a11e2f",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 15:27:26 2026 +0200",
+    "subject": "ðŸŒ� Update translations for uk (update-outdated) (#15900)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "ffcbd457ea065a17645a2a56c3fee588cbaca5a6",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 13:16:54 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "3b7cb60067b982ac682a21485ee413fe89832d80",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 15:16:28 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ko (update-outdated) (#15890)",
+    "body": "Co-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "6c0df1738dc8893e6415ec7c58251898bd63a7a0",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 12:52:28 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c5ab51d50f576a9e53e0f887d4046033234787cd",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 14:51:57 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ru (update-outdated) (#15894)",
+    "body": "Co-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "473acc1adf0218a07510a157a6995b61f2591cb9",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:47:05 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "86dd7b8a23fdbcc4ceafaaa92000a1a5ce874b88",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:46:58 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "bdc2dfc9aae56e7cf61fb14f9ca037a23c74255e",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:46:08 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "bfb663fa848e35d09b9d7bd21e3b346f442a7b80",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:44:40 2026 +0200",
+    "subject": "ðŸŒ� Update translations for es (add-missing) (#15880)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2c4f3e3ece230410893471e66dac68b26b4c915a",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:44:10 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ko (add-missing) (#15888)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "4011c1231827ae472ff35545b7fe1e32be4ba570",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:43:53 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh-hant (add-missing) (#15889)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "78154e85a620556722d0b9318b61d7ba4a222c4d",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:43:39 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "eaace7a13e787e8fab3822165adbef36d21675dd",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:43:23 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "7a79b7e9fb4afa0ee10ccf0bdc800f56adda8732",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:43:20 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "65fd47ffa0077da9760d4ee1d51eeceda4a6dc0f",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:42:52 2026 +0200",
+    "subject": "ðŸŒ� Update translations for pt (add-missing) (#15883)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "0982d3c2ae1059adcf64a2ec51a41e96c891bbd7",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:41:19 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ja (add-missing) (#15882)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2b0f1561936a31291757304e52cd3ece5c90afd4",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:40:30 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh (add-missing) (#15885)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "f382703ff71b1a45ecbfed754bc3eeb2e70b2902",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:37:33 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "75737c19da4b6b4e1e823b7a18cbbbc5d023c3c3",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:37:00 2026 +0200",
+    "subject": "ðŸŒ� Update translations for tr (add-missing) (#15887)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "92cf50e546b2ff92c97a0c16cf48370d7b8f23ad",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:36:23 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "f3e6899127daf4949b868bd4aa2b8d2515884b36",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:35:54 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c9f99ef24f75e573690d49df2fac8d1b83dcf627",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:34:51 2026 +0200",
+    "subject": "ðŸŒ� Update translations for uk (add-missing) (#15886)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "241b9a70a89c390195ec1f0ba087d8418987692a",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:34:11 2026 +0200",
+    "subject": "ðŸŒ� Update translations for fr (add-missing) (#15881)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "a3aa0703a638886d2a72777a24804f57a54d94ac",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:33:25 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "065e7deee4b944684c12a8fa4a808760ff428759",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:32:25 2026 +0200",
+    "subject": "ðŸŒ� Update translations for de (add-missing) (#15884)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "bf41b93fafb6540f254edba93a007e79d65c1947",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:31:59 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "f206f06f1a44e743720fdd5153a68af038098a5f",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:31:35 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ru (add-missing) (#15879)",
+    "body": "Co-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "0df0261757e65fc8a8f22e2b8dff194ea349ddeb",
+    "author": "github-actions[bot]",
+    "date": "Wed Jul 1 10:21:05 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "3ac41743924ca9e8fb4e391fe3c7b5bbccacafc6",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jul 1 12:20:39 2026 +0200",
+    "subject": "ðŸ‘¥ Update FastAPI People - Contributors and Translators (#15878)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "bf8283b4444acfbe6bd6ac1de923760acf5e167a",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 30 18:58:00 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "8da95e1842e2eaa9c12e3ee5a7e3c5522376922e",
+    "author": "Yurii Motov",
+    "date": "Tue Jun 30 20:57:35 2026 +0200",
+    "subject": "ðŸ‘· Remove not needed `allow-unsafe-pr-checkout: true` (#15876)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "fe450d9a414572cf9a7354cef77d99e8d16e7d73",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 30 12:34:14 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "f6f3d25d1088045199209a234b8d106ac2c43163",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 30 12:33:41 2026 +0000",
+    "subject": "â¬† Bump the github-actions group with 5 updates (#15872)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "02f80bc4d026bbbcbfcd9a79d4c674086764d9e7",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 30 09:21:16 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "66a2ad87c17bae25e9e9cab44e285ba84b72734c",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 30 11:20:46 2026 +0200",
+    "subject": "â¬† Bump the python-packages group across 1 directory with 10 updates (#15870)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "a5d220ddbf49789f1d76d12e33b34b909ed4b019",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 30 08:53:18 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "4a298abff1d8c85c9d50e8f3600bb76b427b7f5a",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 30 10:52:46 2026 +0200",
+    "subject": "â¬† Bump CodSpeedHQ/action from 4.17.0 to 4.17.5 in the github-actions group (#15826)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "702fea83bb3ef0b558104835d7936af49650fb2d",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 29 14:06:51 2026 +0200",
+    "subject": "ðŸ”– Release version 0.138.2 (#15864)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "6466865eec63cb545869d80e2ee6fbc54c4d364e",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 29 11:58:23 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b790e14cb686506df663959ac4879053cfed38db",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 29 13:57:59 2026 +0200",
+    "subject": "â™»ï¸� Make `app.frontend()` return 404 for methods other than `GET` or `HEAD` with no static file matches (#15863)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c2708d981729c96437dcc1d7cfa40cd15128bc60",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 29 11:21:22 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "403b1fa16f9519f4b5ab52413daae059479fae4a",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 29 13:20:57 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: remove Stainless (#15862)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "1929ac23195136e8616ed1b7c3fd84c65b26d234",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 27 12:48:01 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "cba41585675ecb0e119d3ca258821659f07ec3f7",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 27 14:47:35 2026 +0200",
+    "subject": "â™»ï¸� Refactor how sponsors data is handled for banners (#15852)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b90c49aefad4958abdfbcacf9c2f816940a8f0e2",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 25 17:38:29 2026 +0200",
+    "subject": "ðŸ”– Release version 0.138.1 (#15842)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "1f2f3df4852bf7cb29be1187806d95a0fdc7ea40",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 25 15:31:17 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "0af003a85da454dcf6b6783e0ad3f0dd687e944f",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 25 17:30:51 2026 +0200",
+    "subject": "â™»ï¸� Refactor Library Skills, make info easier to find for agents (#15841)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d5494c1f01796350fa082cf8a82b124e95162e9d",
+    "author": "github-actions[bot]",
+    "date": "Wed Jun 24 22:37:31 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "82c527e714f16bf9e07202aff0fb91cada329844",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 25 00:35:30 2026 +0200",
+    "subject": "ðŸ‘· Simplify pull request workflow triggers (#15836)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "3f28dbe6d84cdac19bdb2b41e1664981e37359ab",
+    "author": "github-actions[bot]",
+    "date": "Wed Jun 24 12:28:30 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "f6ea6b1f12e6d1a45c630a8fdf5d4c7c0959dad9",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jun 24 14:23:58 2026 +0200",
+    "subject": "ðŸ‘· Update issue-manager to 0.7.1 (#15833)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "219ac634ab82b6321492ef97fb223b618ce13948",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 23 23:16:31 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "fcc8e1f99431a0b381eaef03e07446e6975422b7",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jun 24 01:15:12 2026 +0200",
+    "subject": "â¬†ï¸� Update issue-manager to 0.7.0 (#15831)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "457f4c705c0287e49d7aa4ddec292db6185d16e3",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 23 21:04:44 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "29fc8f61660b52cb626190f865680364d0f32ff2",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Tue Jun 23 23:04:19 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: Add TestMu again (#15830)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "a497a025e7114ca442478ed28da7e0a1cdc6177a",
+    "author": "github-actions[bot]",
+    "date": "Sun Jun 21 19:39:49 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "8f3db3d3e79465a97cbfd9ae47506aca67a58e0f",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sun Jun 21 21:39:25 2026 +0200",
+    "subject": "ðŸ”’ï¸� Update zizmor workflow security checks (#15820)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "0cb4a8e284b450abbccb71c543ad7757de46c0b2",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 20 16:31:34 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d69774c23db11e12474d5237b832dc54fd12bffa",
+    "author": "dependabot[bot]",
+    "date": "Sat Jun 20 18:31:07 2026 +0200",
+    "subject": "â¬† Bump pydantic-settings from 2.14.1 to 2.14.2 (#15799)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "4b83b0d409009c8de9df4070fe163838b1a700c7",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 20 03:14:30 2026 +0200",
+    "subject": "ðŸ”– Release version 0.138.0 (#15808)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "041cb0cdfa2d0f705d14ed07c2c2e0f92ef5f32c",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 20 01:07:09 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "10393846ede7a2947cec594d15a43f813001cab4",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 20 03:06:46 2026 +0200",
+    "subject": "ðŸ“� Fix typo in release notes (#15807)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "0303491b69ff84a4632c0314e6db4df74f2f93f9",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 20 00:59:37 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "190f6e2033c8b886b25027be284d8c8c1893f28c",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 20 02:59:14 2026 +0200",
+    "subject": "ðŸ“� Add Frontend instructions to Agent Library Skill (#15805)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "17945e5ab7f25234340c152a40d232a98857e079",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 20 00:51:57 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2260afaf433103c8104b34d256cf0b96b058823b",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 20 02:51:31 2026 +0200",
+    "subject": "ðŸ�› Fix failing test, update format for raised errors (#15804)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "0cd5001d0ef80a07e2d775c5c75522391a3e06d7",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 20 00:45:46 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "7cb1ab6264bc03319832f553730b511192a0c0d3",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 20 02:45:19 2026 +0200",
+    "subject": "ðŸ‘· Fix test-alls-green (#15803)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "9c7eceb00ff6e1d37980954418f7c9dab30a4cd5",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 20 00:30:21 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d176e00b9fb136ea8324c092c84528fdc3e16919",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 20 02:29:58 2026 +0200",
+    "subject": "ðŸ“� Udpate release notes link (#15802)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "71e608e00e16c88c90bd5b6ffd04b5253a5b4133",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 20 00:26:30 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "459a51097be8187115047149d77dab983a361fb3",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 20 02:26:04 2026 +0200",
+    "subject": "âœ�ï¸� Update white space characters in bigger apps (#15801)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e12833aaa2338d5ff31a71afb6b2d396ae18145f",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 20 00:21:10 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "4d3dc78b262c609daf8a23baa00f31221b386d52",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 20 02:20:49 2026 +0200",
+    "subject": "âœ¨ Add support for `app.frontend(\"/\", directory=\"dist\")` and `router.frontend(\"/\", directory=\"dist\")` (#15800)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "f1d750fddad90e2faad6c3cc5c85c7687b787e89",
+    "author": "github-actions[bot]",
+    "date": "Fri Jun 19 22:28:49 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "22f99d9ad33676a60496379c749d3669f10f5410",
+    "author": "Yurii Motov",
+    "date": "Sat Jun 20 00:28:24 2026 +0200",
+    "subject": "ðŸ”§ Enable checking `release-notes.md` for typos (#15796)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2d0047087526d2af3eca4cee77d56539c52651d1",
+    "author": "github-actions[bot]",
+    "date": "Fri Jun 19 20:16:30 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "6e6c74fc162a4cc6421deb928ad403c9ee0f9d4f",
+    "author": "Yurii Motov",
+    "date": "Fri Jun 19 22:16:06 2026 +0200",
+    "subject": "ðŸŒ� Enable Hindi docs translations (#15554)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "1b68e378eff63dd6e5f26bbcffea364618965d25",
+    "author": "github-actions[bot]",
+    "date": "Fri Jun 19 09:30:09 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "da9d05bc7abe2803db8d892ae3d856b0d93739cb",
+    "author": "Yurii Motov",
+    "date": "Fri Jun 19 11:29:44 2026 +0200",
+    "subject": "âœ�ï¸� Fix grammar, typos, and broken links in docs (#15694)",
+    "body": "Co-authored-by: SebastiÃ¡n RamÃ­rez <tiangolo@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "c61384e3d72cc4d32050e05ee409fd8a5d345844",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 18 10:15:47 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "08321394abb9f5a3994f38b0fa3d3565f9e15946",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 18 12:15:16 2026 +0200",
+    "subject": "ðŸ“� Tweak wording about deploying to FastAPI Cloud (#15793)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c744991f968f44b5dc6eb3c1636866986e653747",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 18 09:00:03 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2f4ba0bdd1f29c4aae3b308fb3aec8a9a5640f61",
+    "author": "Yurii Motov",
+    "date": "Thu Jun 18 10:59:31 2026 +0200",
+    "subject": "ðŸ”¨ Use `gpt-5.5` model in `translate.py`, specify `-chat` to avoid warnings (#15792)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "6a0ba7bb1f5015383cdceb3822ca1abed6e32b82",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 18 08:56:45 2026 +0200",
+    "subject": "ðŸ”– Release version 0.137.2 (#15790)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "5d421ae9774acf3b15ceaaa4f4ed6d68a165e0a1",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 18 06:50:13 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "6ac122071d2c9e6add587e1271eb010dd6acbed0",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 18 08:49:38 2026 +0200",
+    "subject": "âœ¨ Add `iter_route_contexts()` for advanced use cases that used to use `router.routes` (e.g. Jupyverse) (#15785)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "7feb17f80a483e70efa26f01addb94d0070d42ee",
+    "author": "github-actions[bot]",
+    "date": "Wed Jun 17 20:50:29 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d514109e42fc90590a7050e982a37ac6ecf561ab",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jun 17 22:50:01 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: add BairesDev (#15787)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "1c1edb9b55c29b90762b7165cddbefd1276358cf",
+    "author": "github-actions[bot]",
+    "date": "Wed Jun 17 20:36:51 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "32d711f6d24224f2aed3395cac428222cbe9b1fb",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Wed Jun 17 22:36:24 2026 +0200",
+    "subject": "ðŸ”¨ Update sponsors script to simplify previews (#15786)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "202b2d2f5f331db9102b5dbcef071a9e09bed10e",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 16 20:10:12 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e26e64381c35ac6cf3d25bf6accb53b94a66dd8f",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 16 22:09:35 2026 +0200",
+    "subject": "â¬† Bump the python-packages group across 1 directory with 7 updates (#15777)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "c66d1c222bf0aa1c90d6436164292b84ca8d4361",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 16 18:01:49 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "705324ed2977f99dec4df45175ee27a2bf26c17f",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 16 20:01:02 2026 +0200",
+    "subject": "â¬† Bump cryptography from 46.0.7 to 48.0.1 (#15779)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "627636b617427794c56589814046db2e0669bf23",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 16 17:59:45 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "84304df58f837352cdd9503bef4f46f0da852111",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 16 19:59:13 2026 +0200",
+    "subject": "â¬† Bump aiohttp from 3.14.0 to 3.14.1 (#15781)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "aaf70c196c85bd9e0ba4b12f37a1b0650063773b",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 16 15:47:51 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "69f8d87fb7aa2d6028331af16ec28d7b02636183",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 16 17:47:19 2026 +0200",
+    "subject": "â¬† Bump starlette from 1.2.1 to 1.3.1 (#15780)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "a62dd7502219a0f0ae0b47504b00b8e45f44fe89",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 16 15:29:42 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2c77ae3f76a2ec9db0f9ae9b114583a7881fa368",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 16 17:29:07 2026 +0200",
+    "subject": "â¬† Bump astral-sh/setup-uv from 8.1.0 to 8.2.0 in the github-actions group (#15776)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "06074e739b3c9c29d4a27a42ee607537fafcc690",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 16 12:54:08 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "5ebf2ab2d17bacd95154a2c87caa182fa34c6c85",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 16 14:53:10 2026 +0200",
+    "subject": "â¬† Bump https://github.com/crate-ci/typos from v1.47.1 to v1.47.2 in the pre-commit group (#15775)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "files": []
+  },
+  {
+    "sha": "88683944c7e088f21082d13114397d0b627cde47",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 16 12:29:19 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "9ca069f2be3e619fcda6d33fb1ed7025d6f9a419",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 16 14:28:41 2026 +0200",
+    "subject": "â¬† Bump python-multipart from 0.0.30 to 0.0.32 (#15778)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "2f5ba0d5032df6cb0e3bb2ca31ed99bcd04b1912",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 16 11:38:50 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "44e5b99853e086bb28c803b33972965951abfd1a",
+    "author": "êµ¬í�¬ì°¬",
+    "date": "Tue Jun 16 20:38:18 2026 +0900",
+    "subject": "ðŸŒ� Fix broken Markdown in Korean custom response docs (#15774)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2f836a9e70b344ab8a0584b35ea0d61e84ce95ba",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 16 08:34:59 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "818b97a68b7956e2a409203193110082046508cb",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Tue Jun 16 10:34:25 2026 +0200",
+    "subject": "â�ªï¸� Revert removing scripts, only remove `coverage.sh` (#15772)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "aa5eeb3652e1305b8aac57ff1d547cf852a97016",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 22:12:18 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "090386b10e23b9105c5d12ab6ce8779ef43b129a",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 22:11:15 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "aeeb29f6d05ddea1942753b6a7584e21b66cc718",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Tue Jun 16 00:10:59 2026 +0200",
+    "subject": "ðŸŒ� Update translations for fr (update-outdated) (#15761)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b401cb71c0681686f65cc0b654bba3f54e3af5c9",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Tue Jun 16 00:10:42 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh-hant (update-outdated) (#15760)",
+    "body": "Co-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "76008f778bbf2b55a337b2e3be3ea71ae5db51a4",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 21:25:25 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "011da093e154a70853f936c9b47242583f80b8be",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 23:24:43 2026 +0200",
+    "subject": "ðŸŒ� Update translations for de (update-outdated) (#15759)",
+    "body": "Co-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "132c533acea52e575cbdee94702efcff182bb46a",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 21:14:49 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2f69b265ef32f5bfbe6f77b286f2c7231e86a654",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 23:13:54 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ko (update-outdated) (#15757)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "89fcd722e30a4867e7cbe65b977aa66a9c3bc6e4",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 21:09:01 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "3b9f938e50e2e81d1b46459cc86d74b9f282a6ec",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 23:08:29 2026 +0200",
+    "subject": "ðŸŒ� Update translations for uk (update-outdated) (#15756)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "a4bd128ed50b4955a41cf9785b404312c4689ab3",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 20:12:49 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "8012339dc25368bc1c24c12666aae80c8341363f",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 20:12:22 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d026f79b82006d3deaf557e7436fbd47c24d73eb",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 22:12:19 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh (update-outdated) (#15755)",
+    "body": "Co-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "43520809e96cc87d95cad1cf1a417118ea2088f7",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 22:11:49 2026 +0200",
+    "subject": "ðŸŒ� Update translations for tr (update-outdated) (#15754)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "93610bbbcc687a8b3219a2b75794e9ca2bf8dd68",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 19:51:12 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b82ab2fb41bce1c84445cbed8d35f3bb072ba5f5",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 21:50:40 2026 +0200",
+    "subject": "ðŸŒ� Update translations for pt (update-outdated) (#15753)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "451eb49bbcd1599ebcea1799fee9cf1398c91a07",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 19:33:11 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "96592d954b2f0f12941505863f8fffd78c07519b",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 21:32:43 2026 +0200",
+    "subject": "ðŸŒ� Update translations for es (update-outdated) (#15752)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "eaf1d9492502c1d3f962729b38e1a827d6af8630",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 19:09:23 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "9871e03c8a045b2cfb16a7cdb5d405f790de9759",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 21:08:51 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ja (update-outdated) (#15751)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c9d3e8250063b1e57ee98105325bc7cf01cde3a6",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 18:37:06 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "864c29f0756d21cfd76732efcd9af5156a66c489",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 20:36:31 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ru (update-outdated) (#15758)",
+    "body": "Co-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "1b284435ee798087076320689d10fcc1d0dde61c",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 16:04:17 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c054476c6f26ce3377eb58cd1ddae28b1c85607a",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 18:03:45 2026 +0200",
+    "subject": "ðŸ”¥ Remove unused scripts (#15771)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "8c5a830b6d32e21794e301fc7e5dbaaa272ba0f7",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 15:54:17 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b7de2b7feb207b0a157b81c237b5a0cba6e21cb9",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 17:53:46 2026 +0200",
+    "subject": "ðŸ”§ Add ty configs to check docs sources (#15770)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "4473a0cd9129f9623f8d23d1a3bc86914967d9c5",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 14:31:50 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "76876e5a812268860148ba3a2059795b4d65ae55",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 16:31:14 2026 +0200",
+    "subject": "ðŸ”§ Add ty configs to check docs sources (#15769)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "a82e5f2fac102a8b12c0795da80b2cb1d2a8b016",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 13:26:48 2026 +0200",
+    "subject": "ðŸ”– Release version 0.137.1 (#15766)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "edd1461589287bb432c8eb81ace92d000fd5c1b3",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 11:20:24 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b78c82262f5170831ebd3f27873b09d8e579bac2",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 13:19:51 2026 +0200",
+    "subject": "ðŸš¨ Fix typing checks for APIRoute (#15765)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e0f8cadf094bb4cb7a21e7757333d5dfbae46712",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 15 10:55:32 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d8aad201eba558b20419a832e51a026b0e6ede0e",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 15 12:55:06 2026 +0200",
+    "subject": "ðŸ�› Fix bug, allow empty path in path operation in prefixless router (#15763)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "9a9c4ad5d06f5fe8ee6775a5aeaa2f83c854f263",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sun Jun 14 14:47:28 2026 +0200",
+    "subject": "ðŸ”– Release version 0.137.0 (#15748)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c6d58978269b51304ccd8f0fb644f35ecbed94ce",
+    "author": "github-actions[bot]",
+    "date": "Sun Jun 14 12:40:20 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "31d097f286b63c2c7bc9954aa605571e0f3d1e15",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sun Jun 14 14:39:49 2026 +0200",
+    "subject": "ðŸ“� Update release notes (#15747)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "ba609a8946e9054c050ca4cf7afa2a222694bfc9",
+    "author": "github-actions[bot]",
+    "date": "Sun Jun 14 12:36:16 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "8e1d774cef03ab9e2552c26e850cbfc0c63974c3",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sun Jun 14 14:35:48 2026 +0200",
+    "subject": "â™»ï¸� Refactor internals to preserve `APIRouter` and `APIRoute` instances (#15745)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "016ab760faba1813ba235d5582a014a58bd2f417",
+    "author": "github-actions[bot]",
+    "date": "Sat Jun 13 18:22:48 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e2fcd5562f41f2a0d01b1ff43773711bbeeb19e8",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sat Jun 13 20:22:22 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: remove TalorData (#15744)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d3e6a2931f95dcb044c09cbfc39e4b0e9e620fd4",
+    "author": "github-actions[bot]",
+    "date": "Wed Jun 10 23:14:26 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e4b6a36c4fc0d0b37871fe317ab29fe074a3cdbe",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 11 01:13:56 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: remove ExoFlare (#15736)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "944fb706228734cc64fd5f8d5937bc97792c346b",
+    "author": "github-actions[bot]",
+    "date": "Wed Jun 10 23:05:07 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "5d2dae82c4c6ff107147167d70d4fdbd35bc0706",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 11 01:04:41 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: remove InterviewPal (#15735)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e680fd6c8c1c7e3682c9e02d675a9b4c643493e8",
+    "author": "github-actions[bot]",
+    "date": "Wed Jun 10 22:59:54 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "ee036a111ed1e96a7cb425158bda3dc0b45e3d0e",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 11 00:59:29 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: remove Liblab (#15731)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b98fb552e6ba43364f7ae39fd6ef96ecc6f38873",
+    "author": "github-actions[bot]",
+    "date": "Wed Jun 10 22:44:58 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e52919282ab7ae101bcea400542088ff5791f4c4",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 11 00:44:29 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: remove Scalar (#15730)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b31720337af8b5ba5c78e4f0c44ac0ce25d7a5e2",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 9 22:07:36 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e133ffbc1b41bd9f2b4f96f9887e2eb1383530bc",
+    "author": "dependabot[bot]",
+    "date": "Wed Jun 10 00:05:55 2026 +0200",
+    "subject": "â¬† Bump the python-packages group across 1 directory with 6 updates (#15721)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "4be770779e93519b35f233f5adaf302ed9ff5dc2",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 9 22:04:54 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2015b63561b47b52306563c02590748db1d03eaf",
+    "author": "dependabot[bot]",
+    "date": "Wed Jun 10 00:04:26 2026 +0200",
+    "subject": "â¬† Bump python-multipart from 0.0.29 to 0.0.30 (#15723)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "3c5d5bb497469d5004c89f0b5f90dbfd51dd12c2",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 9 21:55:01 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "13b2b4cb346eb2ba18041decf709a528ca05043d",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 9 23:54:29 2026 +0200",
+    "subject": "â¬† Bump the github-actions group with 3 updates (#15720)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "b6ed4666fe0a78c392692679fd66937a1b2e7748",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 9 21:52:25 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "8b80abfbf3bb93f5af2f1b25fbbffcb5177d7e1c",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 9 23:51:55 2026 +0200",
+    "subject": "â¬† Bump starlette from 1.1.0 to 1.2.1 (#15722)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "e42d913c604f506da17feb445fc8385b841cac65",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 9 21:50:10 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "0cf3f76e7c23dd8396a66c30317bf7352bb61898",
+    "author": "dependabot[bot]",
+    "date": "Tue Jun 9 23:49:44 2026 +0200",
+    "subject": "â¬† Bump https://github.com/crate-ci/typos from v1.46.0 to v1.47.1 in the pre-commit group (#15719)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "706e20da5e6c6729299cc643ed2ff383c0bd5440",
+    "author": "github-actions[bot]",
+    "date": "Tue Jun 9 12:05:54 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "71ea74fb8f331e6c24cc0a8cdcd28a8cc76d2a35",
+    "author": "Alejandra",
+    "date": "Tue Jun 9 14:05:27 2026 +0200",
+    "subject": "ðŸ“� Update FastAPI Cloud deployment instructions (#15724)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "5cdf820c8046edaf83c306ebd7435f038fc4a75a",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 4 12:45:13 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "782476e7db6c1f008ad4321c597691e25e5a1f72",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 4 14:44:48 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors, add Rapidproxy (#15689)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "7eb2bf5c4eb9942085b488a8227a8d8bb1b4d03d",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 4 12:31:15 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b3b6aba5ab1bb1cd348026421c969c87d174cb48",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Thu Jun 4 14:30:46 2026 +0200",
+    "subject": "ðŸ”§ Update sponsors: Remove TestMu (#15688)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "433a7ef39b4283d61491d7ebe7c28980f8dc47d2",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 4 12:24:31 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "df3c778ae610e49c0859c0471ead322086f0e760",
+    "author": "dependabot[bot]",
+    "date": "Thu Jun 4 14:24:07 2026 +0200",
+    "subject": "â¬† Bump the python-packages group across 1 directory with 11 updates (#15683)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "09e615a6fc5ea99a4b6e5fb4e767470613d7ada3",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 4 10:38:33 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "81c243f86dd226401392634ee56b345fe8ad1097",
+    "author": "dependabot[bot]",
+    "date": "Thu Jun 4 12:38:07 2026 +0200",
+    "subject": "â¬† Bump aiohttp from 3.13.4 to 3.14.0 (#15681)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "5d2320fca63c2810c124580f97539873089c9b66",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 4 08:49:36 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e95d3aab287687b2e5c5f4d9b40bb83e0f3d089c",
+    "author": "dependabot[bot]",
+    "date": "Thu Jun 4 10:49:11 2026 +0200",
+    "subject": "â¬† Bump the github-actions group with 2 updates (#15682)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "2441eff8375593ed4e2cbe258e9974e288245871",
+    "author": "github-actions[bot]",
+    "date": "Thu Jun 4 08:43:06 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "460f8d2cc8fb5ed5fe9b0a58d06e7a62a09a9f00",
+    "author": "dependabot[bot]",
+    "date": "Thu Jun 4 10:42:42 2026 +0200",
+    "subject": "â¬† Bump starlette from 1.0.0 to 1.1.0 (#15684)",
+    "body": "Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "3d2aace42fdfe34077647e47f3ee9688161e2651",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 17:55:53 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "566bc53187d56cfb8866e45fef82ddd82a22e9c7",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 17:55:37 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "4cc0e5b3ce9a82764ba579e4f79939d04885f313",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 19:55:14 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh-hant (update-outdated) (#15671)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d144531caa1528e3982ce87c8c3e942b50657cf8",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 19:54:40 2026 +0200",
+    "subject": "ðŸŒ� Update translations for es (update-outdated) (#15670)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "57b42cc1380c0e01465352b0471a96596fff0357",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 17:54:15 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2d5e2a4b295eb8f220adbd4b26912f9105b2dc7b",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 19:53:50 2026 +0200",
+    "subject": "ðŸŒ� Update translations for fr (update-outdated) (#15669)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "6999d21e98b5b80d8dcdc00adc42f34062d5b404",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 17:49:54 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "c4cf1341a1482357cfab2a157e9fb54eece47304",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 19:49:30 2026 +0200",
+    "subject": "ðŸ‘¥ Update FastAPI People - Experts (#15677)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "a5a68f14e7624d4996ffadda310ecc88d3386193",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 15:20:38 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "69266562475f455feeb4d63b7fd9f4c09568f80c",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 17:20:05 2026 +0200",
+    "subject": "ðŸ‘¥ Update FastAPI GitHub topic repositories (#15675)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "9f4f3fdc5b943386deefd9d55426d2604619122e",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 11:56:34 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d6629f7dfce7e10826616ac1983bd11383253779",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 13:56:02 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ja (update-outdated) (#15668)",
+    "body": "Co-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "dbe984018bc0da065212c34ee1439326a77b9787",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 10:57:22 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "46bc43a04ac56c3686e28ae22be69f02a926f1c8",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 10:56:17 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "4bdda67fb2279dca3cf7f6361b6e61dfe3d30d9f",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 10:55:45 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2b70d68942ad67acbb793c4c39f6cafad25721a0",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 12:54:59 2026 +0200",
+    "subject": "ðŸŒ� Update translations for pt (update-outdated) (#15667)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "2aa88900dfc34c957aa49b8f9c405c2a465b9b95",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 12:54:44 2026 +0200",
+    "subject": "ðŸŒ� Update translations for tr (update-outdated) (#15666)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "7b262b3d54b791591717e4bf2dcdf5f746cdcb67",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 10:54:29 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d822aefc8a9fb55aae1588e600b51c5cb49b4117",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 12:54:26 2026 +0200",
+    "subject": "ðŸŒ� Update translations for zh (update-outdated) (#15665)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "502d20c4416fc54a5de012a6aa5e4ebc47a15925",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 12:53:57 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ko (update-outdated) (#15664)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "cf2369a59769a6d0731a69bf4a5e66dd9fd07c4a",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 10:29:51 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "674a625ae9f3d89333b75e5d4e2746c8c6716649",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 12:29:20 2026 +0200",
+    "subject": "ðŸŒ� Update translations for de (update-outdated) (#15673)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e1c1299bb52e0aabb2e0049ed5fe84f0cfd6931e",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 10:28:32 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "bb6dbdb6cd4b97ecea3e3590febc03cc516e891a",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 12:28:01 2026 +0200",
+    "subject": "ðŸŒ� Update translations for uk (update-outdated) (#15672)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "e29b179705168749456ff7958ef7655738fcf70f",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 08:42:21 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "d1216e73526671366fa4a75ee1cadbd1d82b0037",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 10:41:55 2026 +0200",
+    "subject": "ðŸŒ� Update translations for ru (update-outdated) (#15674)",
+    "body": "Co-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "files": []
+  },
+  {
+    "sha": "d390d514eb1451356eee51292e87769a54c749f4",
+    "author": "github-actions[bot]",
+    "date": "Mon Jun 1 06:25:13 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "37c92a87ffff168f807fa5188fc8b09efae14cb5",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Mon Jun 1 08:24:46 2026 +0200",
+    "subject": "ðŸ‘¥ Update FastAPI People - Contributors and Translators (#15662)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "0ee8a2424953b7553f25100edfa47514e3a9c651",
+    "author": "github-actions[bot]",
+    "date": "Sun May 31 16:01:07 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "b4d58fddee0d9830ccf790f7ad728f7b9aa958e2",
+    "author": "SebastiÃ¡n RamÃ­rez",
+    "date": "Sun May 31 18:00:38 2026 +0200",
+    "subject": "ðŸ‘· Automate release preparation (#15661)",
+    "body": "",
+    "files": []
+  },
+  {
+    "sha": "ee22a4b8ca46dcce26c8c183afc4992a888d8be2",
+    "author": "github-actions[bot]",
+    "date": "Sat May 30 17:18:39 2026 +0000",
+    "subject": "ðŸ“� Update release notes",
+    "body": "",
+    "files": []
+  }
+]
