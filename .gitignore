@@ -10,5 +10,5 @@ __pycache__/
 # Local data repositories (cloned during data fetching)
 data/fastapi_repo/
 
-# Local FAISS index (generated build artifact)
-data/faiss_index/
+# Local FAISS index (generated build artifact - tracked for Streamlit deployment)
+# data/faiss_index/
