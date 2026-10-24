@@ -2,7 +2,14 @@ import os
 import streamlit as st
 import pandas as pd
 from dotenv import load_dotenv
-from rag_pipeline import PatchContextRAG
+
+try:
+    from rag_pipeline import PatchContextRAG
+except Exception as import_err:
+    import streamlit as st
+    st.error(f"❌ Failed to import RAG pipeline: {import_err}")
+    st.exception(import_err)
+    st.stop()
 
 # Load environment variables
 load_dotenv()
@@ -93,6 +100,7 @@ def get_rag_pipeline():
         return PatchContextRAG()
     except Exception as e:
         st.error(f"Error initializing RAG pipeline: {e}")
+        st.exception(e)  # Show full traceback on page so we can debug
         return None
 
 # Sidebar Layout
