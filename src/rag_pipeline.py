@@ -55,7 +55,7 @@ class PatchContextRAG:
             print("WARNING: FAISS index not found. Please run ingest.py first.")
 
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.0-flash",
+            model="gemini-3.8-flash",
             temperature=0.0,
             google_api_key=self.api_key,
             max_retries=3,
