@@ -1,5 +1,6 @@
 import os
 import re
+import time
 from dotenv import load_dotenv
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
@@ -13,63 +14,88 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 FAISS_INDEX_DIR = os.path.join(DATA_DIR, "faiss_index")
 
+# ---------------------------------------------------------------------------
+# Helper: invoke a LangChain chain with exponential backoff on 503 errors
+# ---------------------------------------------------------------------------
+def invoke_with_retry(chain, inputs, max_attempts=4, base_delay=5):
+    """Retries a chain.invoke call with exponential backoff on 503/server errors."""
+    for attempt in range(1, max_attempts + 1):
+        try:
+            return chain.invoke(inputs)
+        except Exception as e:
+            err_str = str(e)
+            is_server_error = (
+                "503" in err_str
+                or "UNAVAILABLE" in err_str
+                or "ServerError" in err_str
+                or "high demand" in err_str
+            )
+            if is_server_error and attempt < max_attempts:
+                wait = base_delay * (2 ** (attempt - 1))   # 5s, 10s, 20s
+                print(f"[Retry {attempt}/{max_attempts}] Server error – retrying in {wait}s...")
+                time.sleep(wait)
+            else:
+                raise   # Re-raise on final attempt or non-server errors
+
+
 class PatchContextRAG:
     def __init__(self):
         self.api_key = os.getenv("GEMINI_API_KEY")
         if not self.api_key:
             raise ValueError("GEMINI_API_KEY environment variable is not set. Please set it in .env file.")
-            
+
         self.embeddings = GoogleGenerativeAIEmbeddings(
             model="models/gemini-embedding-2",
             google_api_key=self.api_key
         )
-        
+
         # Load FAISS index if it exists
         if os.path.exists(FAISS_INDEX_DIR):
             self.db = FAISS.load_local(
-                FAISS_INDEX_DIR, 
+                FAISS_INDEX_DIR,
                 self.embeddings,
-                allow_dangerous_deserialization=True # Required for loading local FAISS pickle file
+                allow_dangerous_deserialization=True  # Required for loading local FAISS pickle file
             )
             print("FAISS index loaded successfully.")
         else:
             self.db = None
             print("WARNING: FAISS index not found. Please run ingest.py first.")
-            
+
+        # Primary model: gemini-1.5-flash — stable, widely available on free tier
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.0-flash",
+            model="gemini-1.5-flash",
             temperature=0.0,
             google_api_key=self.api_key,
-            max_retries=3
+            max_retries=2,          # SDK-level retries
         )
-        
-        # Lightweight LLM for NLI checks (same model, separate instance for clarity)
+
+        # NLI check model: gemini-1.5-flash-8b — lighter/faster for secondary checks
         self.nli_llm = ChatGoogleGenerativeAI(
-            model="gemini-2.0-flash",
+            model="gemini-1.5-flash-8b",
             temperature=0.0,
             google_api_key=self.api_key,
-            max_retries=3
+            max_retries=2,
         )
-        
+
     def retrieve(self, query, k=5):
         """Retrieves documents using FAISS with Maximal Marginal Relevance (MMR) for diversity."""
         if not self.db:
             print("FAISS database not initialized.")
             return []
-            
+
         # k: number of documents to return, fetch_k: number of documents to pass to MMR algorithm
         retriever = self.db.as_retriever(
             search_type="mmr",
             search_kwargs={"k": k, "fetch_k": 20}
         )
         return retriever.invoke(query)
-        
+
     def extract_citations_from_text(self, text):
         """Extracts citations like [PR #123], [Issue #456], or [Commit 1a2b3c4] from text."""
         # Match [PR #123], [Issue #123], [Commit 1a2b3c4] (hex SHA, 7 to 40 characters)
         pr_issue_pattern = r"\[(?:PR|Issue)\s*#\d+\]"
         commit_pattern = r"\[Commit\s*[a-f0-9]{7,40}\]"
-        
+
         citations = re.findall(pr_issue_pattern, text, re.IGNORECASE) + re.findall(commit_pattern, text, re.IGNORECASE)
         # Standardize spaces and casing (e.g. [pr #123] -> [PR #123])
         standardized = []
@@ -83,16 +109,16 @@ class PatchContextRAG:
             else:
                 standardized.append(c)
         return list(set(standardized))
-        
+
     def check_fabricated_citations(self, response_text, retrieved_docs):
         """Checks if citations mentioned in response actually exist in retrieved docs."""
         allowed_citations = set()
         for doc in retrieved_docs:
             allowed_citations.add(doc.metadata.get("citation", "").upper())
-            
+
         found_citations = self.extract_citations_from_text(response_text)
         fabricated = []
-        
+
         for c in found_citations:
             c_upper = c.upper()
             if c_upper not in allowed_citations:
@@ -110,7 +136,7 @@ class PatchContextRAG:
                         fabricated.append(c)
                 else:
                     fabricated.append(c)
-                    
+
         return fabricated, found_citations
 
     def run_nli_alignment_check(self, context_text, answer_text):
@@ -128,20 +154,21 @@ class PatchContextRAG:
             )),
             ("human", "Context:\n{context}\n\nAnswer:\n{answer}")
         ])
-        
+
         nli_chain = nli_prompt | self.nli_llm | StrOutputParser()
         try:
-            assessment = nli_chain.invoke({"context": context_text, "answer": answer_text})
+            assessment = invoke_with_retry(nli_chain, {"context": context_text, "answer": answer_text})
         except Exception as e:
+            # NLI is a secondary check — don't crash the whole query if it fails
             print(f"Warning: NLI alignment check failed ({e}). Skipping NLI step.")
             return "FULLY SUPPORTED", f"NLI check skipped due to API error: {e}"
-        
+
         verdict = "FULLY SUPPORTED"
         if "[PARTIALLY SUPPORTED]" in assessment:
             verdict = "PARTIALLY SUPPORTED"
         elif "[NOT SUPPORTED]" in assessment:
             verdict = "NOT SUPPORTED"
-            
+
         return verdict, assessment
 
     def answer_query(self, query):
@@ -153,7 +180,7 @@ class PatchContextRAG:
                 "retrieved_docs": [],
                 "guard_status": {"passed": False, "reason": "No vector database"}
             }
-            
+
         # Step 1: Retrieve context
         retrieved_docs = self.retrieve(query, k=5)
         if not retrieved_docs:
@@ -163,12 +190,12 @@ class PatchContextRAG:
                 "retrieved_docs": [],
                 "guard_status": {"passed": True, "reason": "No relevant context"}
             }
-            
+
         # Format the retrieved documents for context
         formatted_context = ""
         for i, doc in enumerate(retrieved_docs):
             formatted_context += f"--- Document {i+1} ---\n{doc.page_content}\n\n"
-            
+
         # Step 2: Set up Chat Prompt for answering
         system_instructions = (
             "You are PatchContext, a RAG agent designed to answer questions about the design and architecture of the FastAPI framework.\n"
@@ -179,20 +206,20 @@ class PatchContextRAG:
             "3. Only use the citations present in the context. Do not invent commit SHAs, PR numbers, or Issue IDs.\n"
             "4. If the context does not contain enough information to answer the question, state that the context is insufficient, but provide whatever partial insights you can find. Do not make up answers.\n"
         )
-        
+
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_instructions),
             ("human", "Context:\n{context}\n\nQuery: {query}")
         ])
-        
+
         chain = prompt | self.llm | StrOutputParser()
-        
-        # Step 3: Initial Generation
-        response = chain.invoke({"context": formatted_context, "query": query})
-        
+
+        # Step 3: Initial Generation (with retry backoff)
+        response = invoke_with_retry(chain, {"context": formatted_context, "query": query})
+
         # Step 4: Verification of citations (Hallucination Guard)
         fabricated, found = self.check_fabricated_citations(response, retrieved_docs)
-        
+
         # Step 5: Self-correction if fabricated citations are found
         if fabricated:
             print(f"Hallucination Guard triggered! Fabricated citations found: {fabricated}. Initiating self-correction...")
@@ -207,24 +234,24 @@ class PatchContextRAG:
                     "If a citation cannot be verified, omit it and rely on the verified ones: {allowed_list}."
                 ))
             ])
-            
+
             allowed_list = ", ".join([d.metadata.get("citation", "") for d in retrieved_docs])
             correction_chain = correction_prompt | self.llm | StrOutputParser()
-            
-            response = correction_chain.invoke({
+
+            response = invoke_with_retry(correction_chain, {
                 "context": formatted_context,
                 "query": query,
                 "response": response,
                 "fabricated_list": ", ".join(fabricated),
                 "allowed_list": allowed_list
             })
-            
+
             # Re-evaluate
             fabricated, found = self.check_fabricated_citations(response, retrieved_docs)
-            
+
         # Step 6: Perform NLI entailment check on final answer
         nli_verdict, nli_assessment = self.run_nli_alignment_check(formatted_context, response)
-        
+
         # Guard status
         guard_passed = (len(fabricated) == 0) and (nli_verdict != "NOT SUPPORTED")
         guard_status = {
@@ -233,17 +260,17 @@ class PatchContextRAG:
             "nli_verdict": nli_verdict,
             "nli_assessment": nli_assessment
         }
-        
+
         # Map citations to their actual URLs from retrieved documents
         citations_mapping = []
         for citation in found:
             if citation in fabricated:
                 continue
-                
+
             url = ""
             source_type = ""
             source_id = ""
-            
+
             cit_clean = citation.upper().replace("[", "").replace("]", "").replace("#", "")
             for doc in retrieved_docs:
                 doc_cit_clean = doc.metadata.get("citation", "").upper().replace("[", "").replace("]", "").replace("#", "")
@@ -252,14 +279,14 @@ class PatchContextRAG:
                     source_type = doc.metadata.get("source_type", "")
                     source_id = doc.metadata.get("source_id", "")
                     break
-                    
+
             citations_mapping.append({
                 "label": citation,
                 "url": url,
                 "source_type": source_type,
                 "source_id": source_id
             })
-            
+
         return {
             "answer": response,
             "citations": citations_mapping,
