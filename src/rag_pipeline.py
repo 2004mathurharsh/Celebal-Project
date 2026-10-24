@@ -61,17 +61,17 @@ class PatchContextRAG:
             self.db = None
             print("WARNING: FAISS index not found. Please run ingest.py first.")
 
-        # Primary model: gemini-1.5-flash — stable, widely available on free tier
+        # Primary model: gemini-2.0-flash — supported by google-genai SDK (v1beta)
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
+            model="gemini-2.0-flash",
             temperature=0.0,
             google_api_key=self.api_key,
             max_retries=2,          # SDK-level retries
         )
 
-        # NLI check model: gemini-1.5-flash-8b — lighter/faster for secondary checks
+        # NLI check model: gemini-2.0-flash-lite — lighter/faster, separate quota bucket
         self.nli_llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash-8b",
+            model="gemini-2.0-flash-lite",
             temperature=0.0,
             google_api_key=self.api_key,
             max_retries=2,
