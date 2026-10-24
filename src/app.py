@@ -186,7 +186,7 @@ if query_input:
     elif rag is None:
         st.error("RAG pipeline failed to initialize. Check logs.")
     else:
-        with st.spinner("Retrieving relevant developer context and generating answer..."):
+        with st.spinner("Retrieving relevant developer context and generating answer... (this may take 20–40 seconds)"):
             try:
                 results = rag.answer_query(query_input)
                 

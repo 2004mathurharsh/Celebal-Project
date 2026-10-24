@@ -15,7 +15,7 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 FAISS_INDEX_DIR = os.path.join(DATA_DIR, "faiss_index")
 
 
-def invoke_with_retry(chain, inputs, max_attempts=4, base_delay=5):
+def invoke_with_retry(chain, inputs, max_attempts=2, base_delay=3):
     """Retries a chain.invoke call with exponential backoff on server errors."""
     for attempt in range(1, max_attempts + 1):
         try:
@@ -24,7 +24,7 @@ def invoke_with_retry(chain, inputs, max_attempts=4, base_delay=5):
             err_str = str(e)
             is_transient = any(x in err_str for x in ["503", "UNAVAILABLE", "high demand", "ServerError"])
             if is_transient and attempt < max_attempts:
-                wait = base_delay * (2 ** (attempt - 1))  # 5s, 10s, 20s
+                wait = base_delay * attempt  # 3s, 6s
                 print(f"[Retry {attempt}/{max_attempts}] Server busy – retrying in {wait}s...")
                 time.sleep(wait)
             else:
@@ -58,7 +58,8 @@ class PatchContextRAG:
             model="gemini-3.8-flash",
             temperature=0.0,
             google_api_key=self.api_key,
-            max_retries=3,
+            max_retries=1,
+            timeout=45,
         )
 
     def retrieve(self, query, k=5):
