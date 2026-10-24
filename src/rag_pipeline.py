@@ -14,28 +14,21 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 FAISS_INDEX_DIR = os.path.join(DATA_DIR, "faiss_index")
 
-# ---------------------------------------------------------------------------
-# Helper: invoke a LangChain chain with exponential backoff on 503 errors
-# ---------------------------------------------------------------------------
+
 def invoke_with_retry(chain, inputs, max_attempts=4, base_delay=5):
-    """Retries a chain.invoke call with exponential backoff on 503/server errors."""
+    """Retries a chain.invoke call with exponential backoff on server errors."""
     for attempt in range(1, max_attempts + 1):
         try:
             return chain.invoke(inputs)
         except Exception as e:
             err_str = str(e)
-            is_server_error = (
-                "503" in err_str
-                or "UNAVAILABLE" in err_str
-                or "ServerError" in err_str
-                or "high demand" in err_str
-            )
-            if is_server_error and attempt < max_attempts:
-                wait = base_delay * (2 ** (attempt - 1))   # 5s, 10s, 20s
-                print(f"[Retry {attempt}/{max_attempts}] Server error – retrying in {wait}s...")
+            is_transient = any(x in err_str for x in ["503", "UNAVAILABLE", "high demand", "ServerError"])
+            if is_transient and attempt < max_attempts:
+                wait = base_delay * (2 ** (attempt - 1))  # 5s, 10s, 20s
+                print(f"[Retry {attempt}/{max_attempts}] Server busy – retrying in {wait}s...")
                 time.sleep(wait)
             else:
-                raise   # Re-raise on final attempt or non-server errors
+                raise
 
 
 class PatchContextRAG:
@@ -61,20 +54,11 @@ class PatchContextRAG:
             self.db = None
             print("WARNING: FAISS index not found. Please run ingest.py first.")
 
-        # Primary model: gemini-2.0-flash — supported by google-genai SDK (v1beta)
         self.llm = ChatGoogleGenerativeAI(
             model="gemini-2.0-flash",
             temperature=0.0,
             google_api_key=self.api_key,
-            max_retries=2,          # SDK-level retries
-        )
-
-        # NLI check model: gemini-2.0-flash-lite — lighter/faster, separate quota bucket
-        self.nli_llm = ChatGoogleGenerativeAI(
-            model="gemini-2.0-flash-lite",
-            temperature=0.0,
-            google_api_key=self.api_key,
-            max_retries=2,
+            max_retries=3,
         )
 
     def retrieve(self, query, k=5):
@@ -92,12 +76,10 @@ class PatchContextRAG:
 
     def extract_citations_from_text(self, text):
         """Extracts citations like [PR #123], [Issue #456], or [Commit 1a2b3c4] from text."""
-        # Match [PR #123], [Issue #123], [Commit 1a2b3c4] (hex SHA, 7 to 40 characters)
         pr_issue_pattern = r"\[(?:PR|Issue)\s*#\d+\]"
         commit_pattern = r"\[Commit\s*[a-f0-9]{7,40}\]"
 
         citations = re.findall(pr_issue_pattern, text, re.IGNORECASE) + re.findall(commit_pattern, text, re.IGNORECASE)
-        # Standardize spaces and casing (e.g. [pr #123] -> [PR #123])
         standardized = []
         for c in citations:
             c_clean = c.strip("[]")
@@ -122,16 +104,11 @@ class PatchContextRAG:
         for c in found_citations:
             c_upper = c.upper()
             if c_upper not in allowed_citations:
-                # Double check with a flexible check
                 clean_c = c_upper.replace("[", "").replace("]", "").replace("#", "")
                 parts = clean_c.split()
                 if len(parts) == 2:
                     val = parts[1]
-                    matched = False
-                    for allowed in allowed_citations:
-                        if val in allowed:
-                            matched = True
-                            break
+                    matched = any(val in allowed for allowed in allowed_citations)
                     if not matched:
                         fabricated.append(c)
                 else:
@@ -155,12 +132,12 @@ class PatchContextRAG:
             ("human", "Context:\n{context}\n\nAnswer:\n{answer}")
         ])
 
-        nli_chain = nli_prompt | self.nli_llm | StrOutputParser()
+        nli_chain = nli_prompt | self.llm | StrOutputParser()
         try:
             assessment = invoke_with_retry(nli_chain, {"context": context_text, "answer": answer_text})
         except Exception as e:
-            # NLI is a secondary check — don't crash the whole query if it fails
-            print(f"Warning: NLI alignment check failed ({e}). Skipping NLI step.")
+            # NLI is secondary — don't crash the whole query if it fails
+            print(f"Warning: NLI alignment check failed ({e}). Skipping.")
             return "FULLY SUPPORTED", f"NLI check skipped due to API error: {e}"
 
         verdict = "FULLY SUPPORTED"
@@ -222,7 +199,7 @@ class PatchContextRAG:
 
         # Step 5: Self-correction if fabricated citations are found
         if fabricated:
-            print(f"Hallucination Guard triggered! Fabricated citations found: {fabricated}. Initiating self-correction...")
+            print(f"Hallucination Guard triggered! Fabricated: {fabricated}. Correcting...")
             correction_prompt = ChatPromptTemplate.from_messages([
                 ("system", system_instructions),
                 ("human", (
@@ -246,13 +223,11 @@ class PatchContextRAG:
                 "allowed_list": allowed_list
             })
 
-            # Re-evaluate
             fabricated, found = self.check_fabricated_citations(response, retrieved_docs)
 
-        # Step 6: Perform NLI entailment check on final answer
+        # Step 6: NLI entailment check
         nli_verdict, nli_assessment = self.run_nli_alignment_check(formatted_context, response)
 
-        # Guard status
         guard_passed = (len(fabricated) == 0) and (nli_verdict != "NOT SUPPORTED")
         guard_status = {
             "passed": guard_passed,
@@ -261,7 +236,7 @@ class PatchContextRAG:
             "nli_assessment": nli_assessment
         }
 
-        # Map citations to their actual URLs from retrieved documents
+        # Map citations to their actual URLs
         citations_mapping = []
         for citation in found:
             if citation in fabricated:
@@ -293,6 +268,7 @@ class PatchContextRAG:
             "retrieved_docs": retrieved_docs,
             "guard_status": guard_status
         }
+
 
 if __name__ == "__main__":
     print("Testing PatchContextRAG with Gemini...")
