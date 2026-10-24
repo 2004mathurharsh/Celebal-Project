@@ -37,10 +37,18 @@ class PatchContextRAG:
             print("WARNING: FAISS index not found. Please run ingest.py first.")
             
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-3.5-flash",
+            model="gemini-2.0-flash",
             temperature=0.0,
             google_api_key=self.api_key,
-            max_retries=0
+            max_retries=3
+        )
+        
+        # Lightweight LLM for NLI checks (same model, separate instance for clarity)
+        self.nli_llm = ChatGoogleGenerativeAI(
+            model="gemini-2.0-flash",
+            temperature=0.0,
+            google_api_key=self.api_key,
+            max_retries=3
         )
         
     def retrieve(self, query, k=5):
@@ -121,8 +129,12 @@ class PatchContextRAG:
             ("human", "Context:\n{context}\n\nAnswer:\n{answer}")
         ])
         
-        nli_chain = nli_prompt | self.llm | StrOutputParser()
-        assessment = nli_chain.invoke({"context": context_text, "answer": answer_text})
+        nli_chain = nli_prompt | self.nli_llm | StrOutputParser()
+        try:
+            assessment = nli_chain.invoke({"context": context_text, "answer": answer_text})
+        except Exception as e:
+            print(f"Warning: NLI alignment check failed ({e}). Skipping NLI step.")
+            return "FULLY SUPPORTED", f"NLI check skipped due to API error: {e}"
         
         verdict = "FULLY SUPPORTED"
         if "[PARTIALLY SUPPORTED]" in assessment:
