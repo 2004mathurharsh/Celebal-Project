@@ -22,7 +22,9 @@ def invoke_with_retry(chain, inputs, max_attempts=2, base_delay=3):
             return chain.invoke(inputs)
         except Exception as e:
             err_str = str(e)
-            is_transient = any(x in err_str for x in ["503", "UNAVAILABLE", "high demand", "ServerError"])
+            is_transient = any(x in err_str for x in [
+                "503", "504", "UNAVAILABLE", "DEADLINE_EXCEEDED", "high demand", "ServerError"
+            ])
             if is_transient and attempt < max_attempts:
                 wait = base_delay * attempt  # 3s, 6s
                 print(f"[Retry {attempt}/{max_attempts}] Server busy – retrying in {wait}s...")
@@ -59,10 +61,10 @@ class PatchContextRAG:
             temperature=0.0,
             google_api_key=self.api_key,
             max_retries=1,
-            timeout=45,
+            timeout=120,
         )
 
-    def retrieve(self, query, k=5):
+    def retrieve(self, query, k=3):
         """Retrieves documents using FAISS with Maximal Marginal Relevance (MMR) for diversity."""
         if not self.db:
             print("FAISS database not initialized.")
@@ -71,7 +73,7 @@ class PatchContextRAG:
         # k: number of documents to return, fetch_k: number of documents to pass to MMR algorithm
         retriever = self.db.as_retriever(
             search_type="mmr",
-            search_kwargs={"k": k, "fetch_k": 20}
+            search_kwargs={"k": k, "fetch_k": 10}
         )
         return retriever.invoke(query)
 
@@ -159,8 +161,8 @@ class PatchContextRAG:
                 "guard_status": {"passed": False, "reason": "No vector database"}
             }
 
-        # Step 1: Retrieve context
-        retrieved_docs = self.retrieve(query, k=5)
+        # Step 1: Retrieve context — use k=3 to keep context small and avoid timeouts
+        retrieved_docs = self.retrieve(query, k=3)
         if not retrieved_docs:
             return {
                 "answer": "No relevant documents found in the database.",
@@ -169,10 +171,14 @@ class PatchContextRAG:
                 "guard_status": {"passed": True, "reason": "No relevant context"}
             }
 
-        # Format the retrieved documents for context
+        # Format the retrieved documents — truncate each to 600 chars to reduce context size
+        MAX_DOC_CHARS = 600
         formatted_context = ""
         for i, doc in enumerate(retrieved_docs):
-            formatted_context += f"--- Document {i+1} ---\n{doc.page_content}\n\n"
+            content = doc.page_content[:MAX_DOC_CHARS]
+            if len(doc.page_content) > MAX_DOC_CHARS:
+                content += "..."
+            formatted_context += f"--- Document {i+1} ---\n{content}\n\n"
 
         # Step 2: Set up Chat Prompt for answering
         system_instructions = (
